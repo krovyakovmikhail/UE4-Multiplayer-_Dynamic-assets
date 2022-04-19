@@ -15,7 +15,7 @@ AALazyActor::AALazyActor()
 	PrimaryActorTick.bCanEverTick = false;
 	
 	BodyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Ball Body Mesh"));
-	BodyMesh->SetupAttachment(RootComponent);
+	BodyMesh -> SetupAttachment(RootComponent);
 	
 	BodyLoadRadius = CreateDefaultSubobject<USphereComponent>(TEXT("Trigger to load mesh"));
 
